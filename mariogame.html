@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <i class> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/mariogame.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="icon" href="images/HK-icon.png" type="image/x-icon" />
+    <title>Mario Game</title>
+</head>
+<body>
+    <!-- ========== Start Header ========== -->
+    <div class="header-title-content">
+        <div class="menu">
+            <div class="column left">
+                <div class="dropdown">
+                    <a href="#">動漫 <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="railgun.html">科學超電磁砲</a>
+                        <a href="#">刀劍神域</a>
+                    </div> 
+                </div> 
+    
+                <div class="dropdown">
+                    <a href="#">瑪利歐遊戲 <i class="fa fa-caret-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="mariogame.html">遊戲介紹</a>
+                    </div> 
+                </div>
+            </div>
+    
+            <div class="column middle">
+                <p>&#124</p>
+            </div>
+            
+            <!-- style="background-color:#5C5C5C;" -->
+            <div class="column right" >
+                <a href="index.html">首頁</a>
+                <a href="creation.html">創作</a>
+                <a href="source.html">資料來源</a>
+            </div>
+        </div>
+
+    <!-- ========== End Header ========== -->
+    <div class="title">
+        <h1>Mario Game Web Site</h1> 
+        <hr>
+    </div>
+    <!-- ========== Start content ========== -->
+    <div class="content">
+        <a href="myPage.html"><img src="images/logo.jpeg"></a>
+        <div class="column">
+            &#10143 遊戲的故事內容:<br>
+            本遊戲主角"瑪利歐"是義大利水管工人。 有一天他知道碧姬公主被庫巴覬覦綁架時，所以他決定去救了碧姬公主。<br>
+            在拯救過程中有一些怪物阻礙， 因此，您將控制他閃避怪物同時收集寶物。<br/>
+            <span id="dots">. . .</span><span id="more">
+            Mario is an Italian plumber. One day he knew that Princess Peach was Kidnapping by King Koopa (Kuba), 
+            so he decided to rescue Princess Peach.<br>There will be some monster obstacles during the rescue, 
+            so you will control him to avoid monsters while collecting treasures.<br></span>
+            <button onclick="myFunction()" id="myBtn">Read more</button>
+        </div>
+    </div>
+    <!-- <p><i class="arrow down" ></i></p> -->
+    <script>
+    function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less";
+          moreText.style.display = "inline";
+        }
+      }
+    </script>
+</div>
+    <!-- ========== End content ========== --> 
+
+    <!-- ========== Start gameinfor ========== -->
+    <div class="gameinfor">
+        <div class="icon-info">
+            <h2>Character items</h2>
+            <ul class="show-icon">
+                <li>
+                    <img src="images/Paper-Mario-icon.png">
+                    <h4>瑪利歐(Mario)</h4>
+                    <p>本遊戲的主角</p>
+                    <hr/>
+                </li>
+                <li>
+                    <img src="images/doorx64.png">
+                    <h4>房屋</h4>
+                    <p>當主角觸碰後會會前往下一關</p>
+                    <hr/>
+                </li>
+                <li>
+                    <img src="images/Star-icon.png">
+                    <h4>星星</h4>
+                    <p>當主角觸碰後會獲得100點積分</p>
+                    <hr/>
+                </li>
+                <li>
+                    <img src="images/Diamond-icon.png">
+                    <h4>鑽石</h4>
+                    <p>當主角觸碰後會獲得5點積分</p>
+                    <hr/>
+                </li>
+                <li>
+                    <img src="images/Luma-Green-icon.png">
+                    <h4>Luma - 奇可(綠色)</h4>
+                    <p>綠色Luma只會左右移動,主角觸碰後會重新開始關卡</p>
+                    <hr/>
+                </li>
+                <li>
+                    <img src="images/Luma-Red-icon.png">
+                    <h4>Luma - 奇可(紅色)</h4>
+                    <p>紅色Luma只會上下移動,主角觸碰後會重新開始關卡</p>
+                    <hr/>
+                </li>
+                <li>
+                    <img src="images/Shell-Green-icon.png">
+                    <h4>綠龜殼</h4>
+                    <p>這種怪物會隨機移動,主角觸碰後會重新開始關卡</p>
+                </li>   
+            </ul>
+        </div>
+
+        <div class="playinfor">
+            <h2>Play information :</h2>
+            <p>《瑪利歐勇闖迷宮》是一款混合瑪利歐和闖關的遊戲。玩家可以自由地控制瑪利歐。</p>
+                <ul>
+                    <li>玩家必須讓瑪利歐閃避怪物，同時收集星星和鑽石。玩家最終目標是讓瑪利歐安全過關。</li><hr/>
+                    <li>當玩家收集不同寶物時會得不同的分數, <br>星星會獲得100分,鑽石會獲得5分。</li><hr/>
+                    <li>遊戲總共有 2 關，當瑪利歐接觸到怪物時遊戲便會重新開始。</li>
+                </ul>
+               <hr/>
+            <h2>Information :</h2>
+                <ul>
+                    <li><b>支援平台</b>: PC</li>
+                    <li><b>遊戲類型</b>: 單人,迷宮,闖關</li>
+                    <li><b>發售日</b>: 2020/4/5</li>
+                    <li><b>發行商:</b> Game Maker8.1</li>
+                    <li><b>遊戲人數</b>: 1人</li>
+                    <li><b>遊戲模式</b>: 單人模式</li>
+                </ul>
+            <hr/>
+        </div>
+    </div>
+    <!-- ========== End gameinfor ========== --> 
+
+    <!-- ========== Start footer ========== -->
+    <div class="footer">
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/Lev1.png" />
+            </div>
+            <div class="text">
+                <h4>Lever 1</h4>
+                <p>At the beginning the main character is in the lower left corner
+                There are 3 green monsters, 4 red monsters, 14 diamonds and 1 star</p>  
+            </div>
+        </div>
+        <div class="box">
+            <div class="imgBx">
+                <img src="images/Lev2.png" />
+            </div>
+            <div class="text">
+                <h4>Lever 2</h4>
+                <p>At the beginning the main character is in the lower left corner
+                There are 1 green monsters, 2 red monsters, 3 Shell-Green, 23 diamonds and 4 star</p>  
+            </div>
+        </div>
+    </div>
+
+    <!-- ========== End footer ========== --> 
+</body>
+</html> 

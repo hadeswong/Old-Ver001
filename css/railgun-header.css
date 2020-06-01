@@ -1,0 +1,40 @@
+
+.bodyimg{
+    position: fixed;
+    z-index: 1;
+    top:0px;
+    left:0px;
+    width:100%; 
+    height:100%;
+    background-position: center;    
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bodyimg img{  width:100%; height:100%; }
+
+.header{
+    position: absolute;
+    z-index: 2;
+    margin: 0px;
+    padding: 0px;
+    top: 10px;
+}
+
+.headbody{float: left;}
+.logo{ background-color: white; width: 230px; }
+.logo img{ padding: 25px 40px 0px 40px; height: 280px; }
+.menu{ margin: 0px; padding: 0px; width: 230px; background-color: white;} 
+
+.menu ul{   
+    margin: 0;
+    padding: 15px 0; 
+    list-style-type: none;     
+    text-align: center;
+    line-height: 35px;
+}
+.menu a{ 
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-decoration: none; color: black;
+}
+.menu ul li:hover{ background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%); } 

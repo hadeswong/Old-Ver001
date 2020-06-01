@@ -1,0 +1,28 @@
+.title-body{ text-align: center; color: white; }
+
+h2{
+    text-align: left;
+    color: white;
+    margin-left: 50px;
+}
+p a{
+    padding-left: 15px;
+    color: red;
+    font-size: 18px;
+    margin-left: 50px;
+}
+.inforbox{ display: flex; align-items: center;}
+.inforbox a{text-decoration: none;}
+
+.Marioinfor , .Railguninfor , .Otherinfor{
+    margin: auto;
+    padding: auto;
+    width: 30%;
+    background-color: white;
+    box-shadow:1px 1px 3px 5px #cccccc;
+    height: 300px;
+}
+
+.inforbox h2{ color: black; margin: 0;  padding: 20px 0px 0px 25px;}
+.inforbox ul {  list-style-type: none; }
+.inforbox ul li{  font-size: 17px; line-height: 30px; } 

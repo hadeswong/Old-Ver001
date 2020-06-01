@@ -1,0 +1,94 @@
+ body{ background: #1c1d26; padding: 0px; margin: 0px;}
+
+/* Create three unequal columns that floats next to each other */
+.menu{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
+  display: flex;
+  align-items: center;
+  margin: 0px; 
+  padding: 0px; 
+  width: 100%;
+}
+
+.column { width:100%; margin:0 auto; height: 50px;}
+
+.left {text-align: right;}
+.left, .right { width: 90%; }
+.middle { width: 10%;  text-align:center; }
+.middle p { margin: 0; padding: 0; pointer-events: none; line-height: 50px; font-size: 24px; color: white; cursor:pointer;}
+
+.menu a, .dropdown a{
+  padding: 0px 20px;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 50px;
+  letter-spacing: 1px;
+  font-family: Tahoma,Helvetica,Arial,\5b8b\4f53,sans-serif;
+}
+
+/* 點擊後文字變紅色 */
+.menu a:hover, .dropdown:hover { color: black; }
+.dropdown{	display:inline-block;}
+
+/* 多功能項目 */
+.dropdown-content {
+  margin: 5px 0px 0px -15px; 
+  position: absolute;
+  display: none;
+  width: 200px;
+  height: 1cm;
+} 
+
+.dropdown-content a {
+  /* 上,右,下,左 */
+  padding: 0px 35px 0px 33px;
+  float: none;
+  display: flex;
+  color: white;
+  height: 1cm;
+  font-size: 17px;
+  align-items: center;
+  text-decoration: none;
+  background: #A8A5A5;
+  /* background:#5D7D97;  */
+  border-radius:6px;
+}
+
+/* 選單之後的文字內容 */
+.dropdown:hover .dropdown-content {display: block;}
+/* --------------------Title--------------------*/
+.title{
+  text-align:center;
+  color: white;
+  margin-top: 80px;
+  width: 100%;
+}
+.title h1{
+  /* @-webkit-keyframes glow */
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+.title hr{
+  background: #e44c65;
+  display: inline-block;
+  height: 0.1em;
+  max-width: 480px;
+  width: 75%;
+  margin: 10px 0 10px 0;
+  position: relative;
+  text-align: center;
+  content: '';
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  } to {
+    text-shadow: 0 0 20px #fff, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6, 0 0 90px #ff4da6;
+  }
+}

@@ -1,0 +1,29 @@
+.body{width: 100%;}
+.headbgimg{ 
+    float: right; 
+    width: 770px;
+    padding-left:140px; 
+}
+.headbgimg img{
+    position:absolute; 
+    margin:auto;
+    max-width: 80%;
+}
+/* 
+.headbgimg p{
+    position: absolute; 
+    z-index: 2;  
+    background-color: red; 
+    text-align: right;
+    width:180px;
+    height:35px;
+    transition: width 0.1s;
+    line-height: 35px;
+}
+.headbgimg a{ text-decoration:none;}
+.headbgimg p:hover{ width:210px; background: linear-gradient(55deg, #0fb8ad 0%, #1fc8db 51%, #2cb5e8 85%); color: white;} */
+
+/* ========== End contents ========== */
+@media screen and (max-width: 600px){
+    .headbody img,.menu{display:none;}
+}

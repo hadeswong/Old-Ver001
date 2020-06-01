@@ -1,0 +1,106 @@
+.header-title-content{ min-height: 100vh; }
+
+.content{ 
+    display: flex;
+     width: auto; 
+     padding: 50px; 
+    
+    }
+
+.content img{ margin-right: 30px; }
+.content .column {
+    margin-top:0 ;
+    color: white;
+    font-size: 18px;
+    line-height: 35px;
+    font-family:PMingLiU;
+    text-align: justify;
+}
+@media screen and (max-width: 600px) {
+    .column { width: 100%; }
+}
+#more {display: none;}
+/* <!-- ========== End content ========== --> */
+.icon-info h2, .playinfor h2{ padding-left: 25px;   }
+.gameinfor{
+    padding: 0px;
+    margin: 0px;
+    min-height: 100vh;
+    background-color: #FDF5E6;
+}
+.icon-info{ float: left; ; margin: 45px 30px; background-color: white; box-shadow:1px 1px 3px 5px #cccccc; width: 30%;}
+
+.icon-info ul {padding-left: 0px;}
+
+.show-icon img { float: left; padding-left: 20px; margin-top: -5px;}
+.show-icon li{ list-style-type: none; margin-top: -10px;}
+.show-icon li h4{ margin-left: 100px; }
+.show-icon li p{
+	margin-left: 100px;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+.playinfor{float: right; width:30%; background-color: white; margin: 45px 30px;box-shadow:1px 1px 3px 5px #cccccc;}
+.playinfor p{ 
+    margin-top: -15px;
+    padding: 0px 25px;
+    font-size: 15px;
+}
+.playinfor ul {  list-style-type: none; margin-left: -15px; margin-right: 30px;}
+.playinfor ul li{  font-size: 17px; line-height: 30px; }
+
+/* <!-- ========== End footer ========== --> */
+ /*. opacity: 1; 設定圖片透明度 */
+.footer{
+    position: absolute; 
+    background: white;
+    display: flex;
+    justify-content: center;/*水平放中間*/
+    align-items: center; /*直中間*/
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    width: 100%;
+}
+.box{
+    position: relative;
+    width: 400px;
+    height: 300px;
+    margin: 40px;
+}
+.text{
+    position: absolute;
+    top: 300px;
+    height: 130px;
+    background: rgba(0,0,0,0.4);
+}
+
+.text h4{
+    font-size: 20px;
+    color: #fff;
+    line-height: 0px;
+    text-align: center;
+}
+
+.text p{
+    margin: 0px 15px;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.imgBx img { width: 400px; } 
+
+/* 
+.down {
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.arrow {
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    bottom: 25px;
+    right: 50%;
+    position: fixed;
+} */
